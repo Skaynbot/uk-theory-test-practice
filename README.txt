@@ -1,14 +1,28 @@
-UK Driving Theory Practice V5
+UK Driving Theory Practice V6
 
-New in V5
-- Expanded visual road-sign academy (25 original SVG-style practice illustrations)
-- Categories: speed limits, orders, warnings, information signs and road markings
-- Varied original hazard-perception scenarios
-- 14-scenario hazard mock with 15 developing hazards and 75 available practice points
-- Practice pass target 44/75
-- Combined multiple-choice + hazard readiness dashboard
-- Existing mock test, quick practice, topic practice, wrong-answer retraining and history retained
+New in V6
+- 10 guided learning lessons
+- Plain-English explanations and examples
+- Memory tips
+- 5-question mini quiz for every lesson
+- 4/5 lesson pass target
+- Saved learning progress on the device
+- Suggested study plan
+- Clear Great Britain scope note
+- Retains V5: full theory mock, topic practice, wrong-answer revision,
+  road-sign academy, hazard practice, hazard mock and combined readiness
 
-Important:
-This is an unofficial practice aid. It is not affiliated with DVSA and does not reproduce
-the official licensed question bank or official hazard-perception clips.
+Learning modules
+1. Road signs & markings
+2. Speed limits & stopping distances
+3. Rules of the road
+4. Vulnerable road users
+5. Motorways & high-speed roads
+6. Vehicle safety
+7. Safe driving: weather, fatigue & distractions
+8. Documents, legal duties & incidents
+9. Hazard perception
+10. Test-day preparation
+
+Unofficial practice aid. Not affiliated with DVSA.
+Use the current Highway Code and GOV.UK theory-test guidance as authoritative sources.

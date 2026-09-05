@@ -1,6 +1,9 @@
-UK Driving Theory Practice
+UK Driving Theory Practice V4
+Adds:
+- Visual road-sign trainer with original SVG illustrations
+- Dedicated signs & markings practice
+- Original animated hazard-perception trainer
+- 5-point developing-hazard scoring practice
+- Existing mock/practice/history features retained
 
-Open index.html in Chrome, Edge, Safari or Firefox.
-To share by link, upload the contents of this folder to a static web host such as GitHub Pages or Netlify.
-
-This is an unofficial practice aid using original question wording. It is not affiliated with DVSA and does not reproduce the official licensed question bank.
+This is an unofficial practice aid and is not affiliated with DVSA.

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#0b4f8a">
-<title>UK Driving Theory Practice</title>
+<title>UK Driving Theory Practice V5</title>
 <style>
 :root{--bg:#f3f5f8;--card:#fff;--ink:#17212b;--muted:#64748b;--blue:#0b4f8a;--blue2:#e9f2fb;--green:#18794e;--red:#b42318;--amber:#8a6200;--border:#d8dee7;--shadow:0 8px 28px rgba(15,23,42,.08)}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}.wrap{max-width:980px;margin:auto;padding:18px}.top{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;margin:8px 0 16px}.brand h1{margin:0;font-size:29px}.brand p{margin:5px 0 0;color:var(--muted);font-size:14px}.badge{background:#e8eef5;padding:8px 12px;border-radius:999px;font-size:13px;font-weight:700}.card{background:var(--card);border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow);padding:20px}.hidden{display:none!important}.hero{display:grid;gap:18px}.hero h2{margin:0;font-size:24px}.hero p{margin:0;color:var(--muted);line-height:1.5}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.mode{border:1px solid var(--border);border-radius:14px;padding:16px;background:#fff;cursor:pointer;text-align:left}.mode:hover{border-color:#89a9c7;box-shadow:0 4px 16px rgba(15,23,42,.07)}.mode strong{display:block;font-size:17px;margin-bottom:5px}.mode span{font-size:13px;color:var(--muted);line-height:1.4}.mode.primary{border-color:#8db2d4;background:var(--blue2)}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.stat{background:#f8fafc;border:1px solid var(--border);border-radius:12px;padding:13px}.stat .n{font-size:25px;font-weight:800}.stat .l{font-size:12px;color:var(--muted);margin-top:3px}.section-title{font-size:17px;margin:6px 0 10px}.topic-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.topic-btn{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:12px 14px;border:1px solid var(--border);border-radius:11px;background:#fff;cursor:pointer;text-align:left}.topic-btn:hover{background:#f8fafc}.topic-btn small{color:var(--muted)}.actions{display:flex;gap:9px;flex-wrap:wrap}.btn{border:0;border-radius:10px;padding:11px 15px;font-weight:700;cursor:pointer}.primary{background:var(--blue);color:#fff}.secondary{background:#eef2f6;color:#243140}.warn{background:#fff4d6;color:#765400;border:1px solid #f0d786}.danger{background:#feeceb;color:var(--red)}.btn:disabled{opacity:.45;cursor:not-allowed}.testmeta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:14px}.progressbar{height:10px;background:#e7ebf0;border-radius:999px;overflow:hidden;margin:12px 0 18px}.progress{height:100%;background:var(--blue);width:0}.question{font-size:22px;line-height:1.4;margin:16px 0}.answers{display:grid;gap:11px}.answer{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--border);border-radius:12px;padding:14px;cursor:pointer}.answer:hover{border-color:#99a9bc}.answer.selected{border-color:var(--blue);background:var(--blue2)}.answer input{margin-top:3px}.testcontrols{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:19px}.feedback{margin-top:14px;padding:13px;border-radius:11px;border:1px solid var(--border)}.feedback.correct{border-left:5px solid var(--green)}.feedback.wrong{border-left:5px solid var(--red)}.score{font-size:44px;font-weight:800;margin:5px 0}.pass{color:var(--green)}.fail{color:var(--red)}.review{display:grid;gap:11px;margin-top:16px}.review-item{border:1px solid var(--border);border-radius:12px;padding:13px}.review-item.wrong{border-left:5px solid var(--red)}.review-item.correct{border-left:5px solid var(--green)}.small{font-size:13px;color:var(--muted);line-height:1.45}.history{display:grid;gap:8px}.history-row{display:grid;grid-template-columns:1.2fr .8fr .8fr .8fr;gap:8px;padding:10px 12px;border:1px solid var(--border);border-radius:10px;font-size:13px}.history-row b{font-size:14px}.footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 4px}.topic-tag{display:inline-block;background:#eef2f6;border-radius:999px;padding:5px 9px;font-size:12px;color:#475569}.setup{display:flex;gap:16px;flex-wrap:wrap}.setup label{border:1px solid var(--border);border-radius:11px;padding:11px 13px;background:#fff}.weak{color:var(--red);font-weight:700}
@@ -24,6 +24,25 @@
 .score-chip{display:inline-block;padding:7px 10px;border-radius:999px;background:#eef2f6;font-weight:700;margin:4px}
 @media(max-width:720px){.v4-grid{grid-template-columns:1fr}.hazard-stage{height:250px}}
 </style>
+
+<style>
+.v5-panel{border:1px solid var(--border);border-radius:14px;padding:16px;background:#f8fafc}
+.v5-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0}
+.v5-score{border:1px solid var(--border);border-radius:12px;padding:14px;background:#fff;text-align:center}
+.v5-score strong{display:block;font-size:25px;margin-bottom:4px}
+.sign-cat{font-size:12px;color:var(--muted);margin-top:6px}
+.hscene{position:absolute;inset:0;pointer-events:none}
+.hobj{position:absolute;transition:all .18s linear}
+.hroad{position:absolute;left:8%;right:8%;bottom:0;height:56%;background:#59636f;clip-path:polygon(30% 0,70% 0,100% 100%,0 100%)}
+.hlane{position:absolute;left:49%;bottom:0;width:2%;height:52%;background:repeating-linear-gradient(to bottom,#fff 0 18px,transparent 18px 36px)}
+.hkerb{position:absolute;left:0;right:0;bottom:54%;height:5px;background:#d8dee7}
+.hbuilding{position:absolute;bottom:55%;width:70px;height:75px;background:#d9c7aa;border:2px solid #8b7a64}
+.hb1{left:3%}.hb2{right:3%}
+.hazard-stage.v5{user-select:none;-webkit-user-select:none}
+.hazard-flash{animation:hazardFlash .25s ease}
+@keyframes hazardFlash{50%{box-shadow:inset 0 0 0 5px rgba(11,79,138,.35)}}
+@media(max-width:720px){.v5-summary{grid-template-columns:1fr}}
+</style>
 </head>
 <body><div class="wrap">
 <div class="top"><div class="brand"><h1>UK Driving Theory Practice</h1><p>Car theory practice — original questions based on UK road rules and the Highway Code.</p></div><div class="badge">Mock pass mark 43/50</div></div>
@@ -38,8 +57,10 @@
   </div>
   
 <div class="v4-grid">
-  <button class="mode" onclick="startSignTrainer()"><strong>🚦 Visual road-sign trainer</strong><span>Identify signs from illustrations, get instant explanations and build a sign score.</span></button>
-  <button class="mode" onclick="startHazardTrainer()"><strong>👀 Hazard perception trainer</strong><span>Original animated practice scenarios. Tap when a developing hazard appears.</span></button>
+  <button class="mode" onclick="startSignTrainerV5()"><strong>🚦 Road-sign academy</strong><span>Expanded visual bank covering warnings, orders, speed limits, information signs and road markings.</span></button>
+  <button class="mode" onclick="startHazardPracticeV5()"><strong>👀 Hazard practice</strong><span>Train on different developing-hazard situations with instant coaching.</span></button>
+  <button class="mode primary" onclick="startHazardMockV5()"><strong>🎬 Hazard mock test</strong><span>14 original scenarios, 15 developing hazards, maximum 75 points. Practice pass mark 44/75.</span></button>
+  <button class="mode" onclick="showCombinedV5()"><strong>📊 Combined readiness</strong><span>See multiple-choice and hazard results together.</span></button>
 </div>
 <div class="setup"><label><input type="checkbox" id="mockTimer" checked> Use timer in mock test</label><label><input type="checkbox" id="instant" checked> Show explanations in practice</label></div>
   <div id="topicPanel" class="hidden"><div class="section-title">Choose a topic</div><div id="topics" class="topic-grid"></div></div>
@@ -55,7 +76,7 @@
 <section id="results" class="card hidden"><h2 style="margin-top:0">Result</h2><div id="score" class="score"></div><div id="resultText"></div><div id="resultInfo" class="small" style="margin-top:8px"></div><div class="actions" style="margin-top:16px"><button class="btn primary" onclick="goHome()">Back to dashboard</button><button class="btn secondary" onclick="showWrong()">Review mistakes</button><button class="btn secondary" onclick="repeatLast()">Try another</button></div><div id="review" class="review hidden"></div></section>
 
 <section id="signTrainer" class="card hidden">
-  <div class="testmeta"><span>Visual signs & markings</span><span id="signCounter"></span><span id="signScore"></span></div>
+  <div class="testmeta"><span>Road-sign academy</span><span id="signCounter"></span><span id="signScore"></span></div>
   <div class="sign-stage" id="signStage"></div>
   <div id="signQuestion" class="question"></div>
   <div id="signAnswers" class="answers"></div>
@@ -74,7 +95,18 @@
   <div id="hazardExplain" class="feedback hidden"></div>
   <div class="actions"><button class="btn secondary" onclick="goHomeV4()">Back</button><button class="btn primary" id="hazardStart" onclick="runHazardScenario()">Start scenario</button></div>
 </section>
-<div class="footer"><b>New:</b> wrong-answer retraining and improved weak-topic tracking. Progress stays on this device. • Practice aid only. Not an official DVSA product. Visual signs and hazard scenarios are original training material; official licensed question-bank content and DVSA hazard clips are not reproduced.</div>
+
+<section id="combinedV5" class="card hidden">
+ <h2 style="margin-top:0">Theory-test readiness</h2>
+ <p class="small">The real car theory test requires both parts to be passed. This dashboard uses your saved practice results on this device.</p>
+ <div class="v5-summary">
+   <div class="v5-score"><strong id="v5mc">—</strong><span>Multiple choice<br>Practice target 43/50</span></div>
+   <div class="v5-score"><strong id="v5hz">—</strong><span>Hazard perception<br>Practice target 44/75</span></div>
+   <div class="v5-score"><strong id="v5ready">Not yet</strong><span>Overall readiness</span></div>
+ </div>
+ <div class="actions"><button class="btn primary" onclick="goHomeV5()">Back to dashboard</button><button class="btn secondary" onclick="startHazardMockV5()">Take hazard mock</button></div>
+</section>
+<div class="footer"><b>V5:</b> expanded road-sign academy, varied hazard practice, 14-scenario hazard mock and combined readiness dashboard. Progress stays on this device. • Practice aid only. Not an official DVSA product. Visual signs and hazard scenarios are original training material; official licensed question-bank content and DVSA hazard clips are not reproduced.</div>
 </div>
 <script>
 const baseBank = [
@@ -368,5 +400,100 @@ function resetHazard(){hazardActive=false;hazardClicks=0;clearInterval(hazardTim
 function runHazardScenario(){if(hazardNo>=5){hazardNo=0;hazardTotal=0}resetHazard();hazardActive=true;hazardStartTime=performance.now();hazardDevelopAt=hazardStartTime+2800+Math.random()*900;document.getElementById("hazardMsg").textContent="Scene running — watch for a developing hazard.";document.getElementById("hazardStart").disabled=true;hazardTimer=setInterval(()=>{const now=performance.now(),elapsed=now-hazardStartTime;if(elapsed>1800){document.getElementById("hazardCar").style.left=(45-(elapsed-1800)/170)+"%"}if(now>=hazardDevelopAt){document.getElementById("hazardPed").style.right=(9+(now-hazardDevelopAt)/65)+"%"}if(elapsed>7200)finishHazard(0,"You did not identify the developing hazard in time.")},120)}
 function hazardClick(){if(!hazardActive)return;hazardClicks++;if(hazardClicks>5){finishHazard(0,"Too many repeated clicks. In the real test, inappropriate repeated clicking can result in no score for a clip.");return}const now=performance.now();if(now<hazardDevelopAt-450)return;const d=now-hazardDevelopAt;let pts=d<350?5:d<800?4:d<1300?3:d<1900?2:d<2500?1:0;finishHazard(pts,pts?`Good recognition. You scored ${pts}/5 for this practice scenario.`:"The hazard had already developed significantly before you reacted.")}
 function finishHazard(pts,msg){if(!hazardActive)return;hazardActive=false;clearInterval(hazardTimer);hazardTotal+=pts;hazardNo++;const f=document.getElementById("hazardExplain");f.className="feedback "+(pts>=3?"correct":"wrong");f.innerHTML=`<b>${msg}</b><br>The pedestrian moving towards the carriageway while the vehicle ahead changes position is the developing hazard. A potential hazard becomes developing when it starts to require you to change speed or direction.`;document.getElementById("hazardScore").textContent=`Total ${hazardTotal}/25`;document.getElementById("hazardStart").disabled=false;document.getElementById("hazardStart").textContent=hazardNo>=5?"Restart 5 scenarios":"Next scenario";if(hazardNo>=5)document.getElementById("hazardMsg").textContent=`Practice complete: ${hazardTotal}/25.`}
+
+
+// ===== V5 expanded signs, hazard practice and 14-scenario hazard mock =====
+const signBankV5=[
+ {cat:"Speed limits",kind:"speed20",q:"What does this sign mean?",a:["Minimum 20 mph","Maximum 20 mph","Advisory 20 mph","End of 20 mph zone"],c:1,e:"A number in a red circle is a maximum speed limit."},
+ {cat:"Speed limits",kind:"speed30",q:"What does this sign mean?",a:["Minimum 30 mph","Maximum 30 mph","End of restriction","Recommended 30 mph"],c:1,e:"A red-ringed number gives the maximum permitted speed."},
+ {cat:"Speed limits",kind:"speed50",q:"What does this sign mean?",a:["Maximum 50 mph","Minimum 50 mph","50 yards to junction","End of 50 mph limit"],c:0,e:"The sign sets a maximum speed of 50 mph."},
+ {cat:"Speed limits",kind:"national",q:"What does this sign mean?",a:["No speed restriction","National speed limit applies","End of motorway","Minimum speed applies"],c:1,e:"The white circle with a black diagonal stripe means the national speed limit applies."},
+ {cat:"Orders",kind:"noentry",q:"What does this sign mean?",a:["No waiting","No entry for vehicular traffic","One-way road","Road works"],c:1,e:"The red disc with a horizontal white bar means no entry for vehicular traffic."},
+ {cat:"Orders",kind:"stop",q:"What must you do?",a:["Slow down only","Stop and give way","Stop only if traffic is coming","Give way without stopping"],c:1,e:"At a STOP sign you must stop and give way."},
+ {cat:"Orders",kind:"giveway",q:"What does this sign require?",a:["Stop","Give way","No overtaking","Turn around"],c:1,e:"The inverted red-edged triangle is the Give Way sign."},
+ {cat:"Orders",kind:"turnleft",q:"What does this blue circular sign mean?",a:["Left turn prohibited","Turn left","Road bends left","Keep right"],c:1,e:"Blue circles generally give mandatory instructions. This one requires a left turn."},
+ {cat:"Orders",kind:"keepLeft",q:"What does this sign mean?",a:["Overtake on the left","Keep left","Left lane closed","No left turn"],c:1,e:"The blue circular arrow instructs traffic to keep left."},
+ {cat:"Orders",kind:"noU",q:"What does this sign mean?",a:["U-turn only","No U-turn","Roundabout ahead","No right turn"],c:1,e:"The red prohibition symbol across the U-turn arrow means U-turns are prohibited."},
+ {cat:"Warnings",kind:"roundabout",q:"What is ahead?",a:["One-way street","Roundabout","No U-turn","Mini-roundabout only"],c:1,e:"The triangular sign with circular arrows warns of a roundabout ahead."},
+ {cat:"Warnings",kind:"bend",q:"What does this sign warn of?",a:["Bend to the right","Road narrows","Side road","Slippery road"],c:0,e:"The symbol warns of a bend to the right."},
+ {cat:"Warnings",kind:"crossroads",q:"What does this sign warn of?",a:["Crossroads","Railway crossing","Pedestrian crossing","No through road"],c:0,e:"The cross symbol in a warning triangle indicates crossroads ahead."},
+ {cat:"Warnings",kind:"narrow",q:"What does this sign warn of?",a:["Dual carriageway starts","Road narrows on both sides","Two-way traffic ends","Tunnel"],c:1,e:"The converging lines warn that the road narrows on both sides."},
+ {cat:"Warnings",kind:"slippery",q:"What does this sign warn of?",a:["Uneven road","Slippery road","Loose chippings","Side winds"],c:1,e:"The skidding-car symbol warns of a slippery road."},
+ {cat:"Warnings",kind:"ped",q:"What does this sign warn of?",a:["No pedestrians","Pedestrians in road ahead","Pedestrian zone ends","Footpath only"],c:1,e:"This triangular sign warns of pedestrians in the road ahead."},
+ {cat:"Warnings",kind:"children",q:"What does this sign warn of?",a:["Playground parking","Children going to or from school","No children","Pedestrian-only street"],c:1,e:"This warns of children, often near a school or playground."},
+ {cat:"Warnings",kind:"cycles",q:"What does this sign warn of?",a:["Cycle route only","No cycles","Cycle route crossing or cyclists ahead","Cycle parking"],c:2,e:"This warning sign alerts drivers to cyclists or a cycle route crossing."},
+ {cat:"Warnings",kind:"signals",q:"What does this sign warn of?",a:["Traffic signals ahead","Level crossing","Stop sign ahead","Road works"],c:0,e:"The traffic-light symbol warns of traffic signals ahead."},
+ {cat:"Warnings",kind:"roadworks",q:"What does this sign warn of?",a:["Pedestrians","Road works","Uneven bridge","Falling rocks"],c:1,e:"The worker-with-spade symbol warns of road works."},
+ {cat:"Information",kind:"parking",q:"What does this sign indicate?",a:["No parking","Parking place","Police station","Pedestrian zone"],c:1,e:"A white P on a blue background indicates parking."},
+ {cat:"Information",kind:"motorway",q:"What does this blue sign indicate?",a:["Motorway regulations begin","Bus lane begins","Dual carriageway ends","Minimum speed"],c:0,e:"The motorway symbol indicates the start of motorway regulations."},
+ {cat:"Information",kind:"hospital",q:"What does this sign indicate?",a:["First aid kit required","Hospital","No horn zone","Hotel"],c:1,e:"The H information sign indicates a hospital."},
+ {cat:"Road markings",kind:"box",q:"What is the purpose of this yellow box marking?",a:["Parking area","Keep the junction clear","Taxi rank","Bus stop"],c:1,e:"Yellow box markings are used to keep junctions clear. You should not enter unless your exit is clear, subject to the turning-right exception."},
+ {cat:"Road markings",kind:"doublewhite",q:"What do these double white centre lines mean when the line nearest you is solid?",a:["You may cross whenever clear","Restrictions apply to crossing or straddling the line","Parking only","One-way traffic"],c:1,e:"A solid white line nearest you imposes restrictions on crossing or straddling it, with limited exceptions."}
+];
+
+function signSVGV5(k){
+ const c='viewBox="0 0 200 200" class="sign-svg" aria-label="traffic sign illustration"';
+ const speed=k.match(/^speed(\d+)$/);
+ if(speed)return `<svg ${c}><circle cx="100" cy="100" r="76" fill="white" stroke="#d11" stroke-width="16"/><text x="100" y="126" text-anchor="middle" font-size="70" font-family="Arial" fill="#111">${speed[1]}</text></svg>`;
+ if(k==="national")return `<svg ${c}><circle cx="100" cy="100" r="76" fill="white" stroke="#222" stroke-width="4"/><line x1="47" y1="153" x2="153" y2="47" stroke="#222" stroke-width="14"/></svg>`;
+ if(k==="noentry")return `<svg ${c}><circle cx="100" cy="100" r="76" fill="#d71920"/><rect x="42" y="84" width="116" height="32" fill="white"/></svg>`;
+ if(k==="stop")return `<svg ${c}><polygon points="66,22 134,22 178,66 178,134 134,178 66,178 22,134 22,66" fill="#d71920"/><text x="100" y="119" text-anchor="middle" font-size="46" font-weight="700" font-family="Arial" fill="white">STOP</text></svg>`;
+ if(k==="giveway")return `<svg ${c}><polygon points="100,170 24,38 176,38" fill="white" stroke="#d11" stroke-width="15" stroke-linejoin="round"/></svg>`;
+ if(k==="turnleft"||k==="keepLeft")return `<svg ${c}><circle cx="100" cy="100" r="78" fill="#1267b2"/><path d="${k==="turnleft"?'M145 100 H68 M68 100 L100 68 M68 100 L100 132':'M135 55 L65 125 M65 125 L65 88 M65 125 L103 125'}" fill="none" stroke="white" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+ if(k==="noU")return `<svg ${c}><circle cx="100" cy="100" r="76" fill="white" stroke="#d11" stroke-width="14"/><path d="M130 135 V88 C130 48 70 48 70 90 V115" fill="none" stroke="#111" stroke-width="12"/><path d="M50 100 L70 122 L90 100" fill="none" stroke="#111" stroke-width="12"/><line x1="48" y1="152" x2="152" y2="48" stroke="#d11" stroke-width="14"/></svg>`;
+ if(k==="parking")return `<svg ${c}><rect x="30" y="30" width="140" height="140" rx="8" fill="#1267b2"/><text x="100" y="137" text-anchor="middle" font-size="105" font-family="Arial" fill="white">P</text></svg>`;
+ if(k==="hospital")return `<svg ${c}><rect x="30" y="30" width="140" height="140" rx="8" fill="#1267b2"/><text x="100" y="137" text-anchor="middle" font-size="105" font-family="Arial" fill="white">H</text></svg>`;
+ if(k==="motorway")return `<svg ${c}><rect x="25" y="35" width="150" height="130" rx="7" fill="#1267b2"/><path d="M62 145 L83 58 M138 145 L117 58 M48 110 H152" stroke="white" stroke-width="10" fill="none"/></svg>`;
+ if(k==="box")return `<svg ${c}><rect x="20" y="35" width="160" height="130" fill="#555"/><rect x="42" y="55" width="116" height="90" fill="none" stroke="#ffd400" stroke-width="7"/><path d="M42 55 L158 145 M158 55 L42 145" stroke="#ffd400" stroke-width="5"/></svg>`;
+ if(k==="doublewhite")return `<svg ${c}><rect x="20" y="20" width="160" height="160" fill="#555"/><line x1="88" y1="20" x2="88" y2="180" stroke="white" stroke-width="7"/><line x1="112" y1="20" x2="112" y2="180" stroke="white" stroke-width="7" stroke-dasharray="20 16"/></svg>`;
+ const icons={
+  roundabout:'<text x="100" y="122" text-anchor="middle" font-size="72">⟳</text>',
+  bend:'<path d="M78 145 C78 105 128 105 128 58" fill="none" stroke="#111" stroke-width="13"/>',
+  crossroads:'<path d="M100 145 V58 M62 100 H138" stroke="#111" stroke-width="13"/>',
+  narrow:'<path d="M68 58 L88 145 M132 58 L112 145" stroke="#111" stroke-width="12"/>',
+  slippery:'<path d="M78 85 H122 L135 112 H65 Z M68 125 Q90 105 110 128 Q130 145 145 126" fill="none" stroke="#111" stroke-width="9"/>',
+  ped:'<text x="100" y="126" text-anchor="middle" font-size="70">🚶</text>',
+  children:'<text x="100" y="126" text-anchor="middle" font-size="62">🧒</text>',
+  cycles:'<text x="100" y="125" text-anchor="middle" font-size="64">🚲</text>',
+  signals:'<text x="100" y="128" text-anchor="middle" font-size="68">🚦</text>',
+  roadworks:'<text x="100" y="127" text-anchor="middle" font-size="64">🚧</text>'
+ };
+ return `<svg ${c}><polygon points="100,20 180,165 20,165" fill="white" stroke="#d11" stroke-width="14" stroke-linejoin="round"/>${icons[k]||""}</svg>`;
+}
+let signV5=[],signV5i=0,signV5score=0,signV5locked=false;
+function hideAllV5(){["home","test","results","signTrainer","hazardTrainer","combinedV5"].forEach(id=>{const x=document.getElementById(id);if(x)x.classList.add("hidden")})}
+function goHomeV5(){hideAllV5();document.getElementById("home").classList.remove("hidden");if(typeof renderHome==="function")renderHome()}
+function startSignTrainerV5(){hideAllV5();document.getElementById("signTrainer").classList.remove("hidden");signV5=[...signBankV5].sort(()=>Math.random()-.5);signV5i=0;signV5score=0;renderSignV5()}
+function renderSignV5(){signV5locked=false;let s=signV5[signV5i];document.getElementById("signCounter").textContent=`Sign ${signV5i+1}/${signV5.length}`;document.getElementById("signScore").textContent=`Score ${signV5score}`;document.getElementById("signStage").innerHTML=signSVGV5(s.kind)+`<div class="sign-cat">${s.cat}</div>`;document.getElementById("signQuestion").textContent=s.q;let box=document.getElementById("signAnswers");box.innerHTML="";s.a.forEach((t,i)=>{let b=document.createElement("button");b.className="answer";b.innerHTML=`<b>${String.fromCharCode(65+i)}.</b> ${t}`;b.onclick=()=>answerSignV5(i,b);box.appendChild(b)});document.getElementById("signFeedback").className="feedback hidden";document.getElementById("nextSign").classList.add("hidden");document.getElementById("nextSign").onclick=nextSignV5}
+function answerSignV5(i,b){if(signV5locked)return;signV5locked=true;let s=signV5[signV5i],ok=i===s.c;if(ok)signV5score++;[...document.getElementById("signAnswers").children].forEach((x,j)=>{if(j===s.c)x.style.borderColor="#18794e";if(j===i&&j!==s.c)x.style.borderColor="#b42318"});let f=document.getElementById("signFeedback");f.className="feedback "+(ok?"correct":"wrong");f.innerHTML=`<b>${ok?"Correct":"Incorrect"}.</b> ${s.e}`;document.getElementById("signScore").textContent=`Score ${signV5score}`;document.getElementById("nextSign").classList.remove("hidden")}
+function nextSignV5(){signV5i++;if(signV5i>=signV5.length){document.getElementById("signQuestion").textContent=`Road-sign session complete — ${signV5score}/${signV5.length}`;document.getElementById("signAnswers").innerHTML="";document.getElementById("signStage").innerHTML='<div style="font-size:70px">🚦</div>';document.getElementById("nextSign").classList.add("hidden");localStorage.setItem("v5SignBest",Math.max(+localStorage.getItem("v5SignBest")||0,signV5score));return}renderSignV5()}
+
+// Hazard engine: 14 original abstract road scenarios; scenario 7 has two scoring hazards.
+const hzScenarios=[
+ {name:"Pedestrian stepping out",icon:"🚶",desc:"A pedestrian moves from the pavement towards your path."},
+ {name:"Vehicle pulling from side road",icon:"🚗",desc:"A vehicle begins to emerge from a side road."},
+ {name:"Cyclist moving out",icon:"🚲",desc:"A cyclist changes position to avoid an obstruction."},
+ {name:"Parked car moving away",icon:"🚙",desc:"A parked vehicle signals and begins moving into your lane."},
+ {name:"Child near crossing",icon:"🧒",desc:"A child moves towards a crossing."},
+ {name:"Van obscuring view",icon:"🚐",desc:"A vehicle appears from behind an obstruction."},
+ {name:"Busy junction — two hazards",icon:"🚗",desc:"Two separate developing hazards occur in this scenario.",two:true},
+ {name:"Motorcycle filtering",icon:"🏍️",desc:"A motorcycle changes position into a conflict area."},
+ {name:"Animal entering road",icon:"🐕",desc:"An animal moves from the verge towards the carriageway."},
+ {name:"Vehicle braking ahead",icon:"🚘",desc:"Traffic ahead slows sharply."},
+ {name:"Roadworks obstruction",icon:"🚧",desc:"A work-zone obstruction requires a change of course."},
+ {name:"Bus pulling away",icon:"🚌",desc:"A bus signals and starts to pull away."},
+ {name:"Country-road bend",icon:"🚜",desc:"A slow vehicle becomes visible beyond a bend."},
+ {name:"Poor-visibility conflict",icon:"🌫️",desc:"A road user emerges in reduced visibility."}
+];
+let hzMode="practice",hzIndex=0,hzTotal=0,hzActive=false,hzClicks=[],hzTargets=[],hzFound=[],hzTick=null,hzStart=0;
+function prepHazardUIV5(){hideAllV5();let s=document.getElementById("hazardTrainer");s.classList.remove("hidden");let st=document.getElementById("hazardStage");st.classList.add("v5");st.innerHTML='<div class="hazard-msg" id="hazardMsg"></div><div class="hbuilding hb1"></div><div class="hbuilding hb2"></div><div class="hkerb"></div><div class="hroad"></div><div class="hlane"></div><div class="hobj" id="hzObj" style="right:5%;bottom:115px;font-size:40px"></div><div class="hobj" id="hzObj2" style="left:5%;bottom:105px;font-size:38px"></div>';document.getElementById("hazardExplain").className="feedback hidden"}
+function startHazardPracticeV5(){hzMode="practice";hzIndex=0;hzTotal=0;prepHazardUIV5();resetHazardV5()}
+function startHazardMockV5(){hzMode="mock";hzIndex=0;hzTotal=0;prepHazardUIV5();resetHazardV5()}
+function resetHazardV5(){clearInterval(hzTick);hzActive=false;hzClicks=[];hzFound=[];let sc=hzScenarios[hzIndex%hzScenarios.length];document.getElementById("hazardCounter").textContent=hzMode==="mock"?`Clip ${hzIndex+1}/14`:`Practice ${hzIndex+1}`;document.getElementById("hazardScore").textContent=hzMode==="mock"?`Score ${hzTotal}/75`:`Score ${hzTotal}`;document.getElementById("hazardMsg").textContent=`${sc.name}: press Start, then watch the whole scene.`;document.getElementById("hzObj").textContent=sc.icon;document.getElementById("hzObj").style.right="5%";document.getElementById("hzObj").style.bottom="115px";document.getElementById("hzObj2").textContent=sc.two?"🚶":"";document.getElementById("hzObj2").style.left="5%";document.getElementById("hazardExplain").className="feedback hidden";let b=document.getElementById("hazardStart");b.disabled=false;b.textContent="Start scenario";b.onclick=runHazardV5;document.getElementById("hazardStage").onclick=hazardClickV5}
+function runHazardV5(){let sc=hzScenarios[hzIndex%hzScenarios.length];hzActive=true;hzClicks=[];hzFound=[];hzStart=performance.now();let first=2600+Math.random()*900;hzTargets=sc.two?[first,first+2600]:[first];document.getElementById("hazardStart").disabled=true;document.getElementById("hazardMsg").textContent="Scene running — click/tap when a hazard starts to develop.";hzTick=setInterval(()=>{let t=performance.now()-hzStart,o=document.getElementById("hzObj"),o2=document.getElementById("hzObj2");if(t>1600)o.style.right=Math.min(48,5+(t-1600)/95)+"%";if(sc.two&&t>hzTargets[1]-500)o2.style.left=Math.min(46,5+(t-(hzTargets[1]-500))/75)+"%";if(t>8000)finishHazardV5()},100)}
+function scoreWindowV5(delta){return delta<0?0:delta<400?5:delta<850?4:delta<1350?3:delta<1950?2:delta<2550?1:0}
+function hazardClickV5(){if(!hzActive)return;let now=performance.now()-hzStart;hzClicks.push(now);let stage=document.getElementById("hazardStage");stage.classList.remove("hazard-flash");void stage.offsetWidth;stage.classList.add("hazard-flash");if(hzClicks.length>8){hzTotal-=hzFound.reduce((a,x)=>a+x,0);hzFound=[];finishHazardV5(true);return}for(let i=0;i<hzTargets.length;i++){if(hzFound[i]!==undefined)continue;let p=scoreWindowV5(now-hzTargets[i]);if(p>0){hzFound[i]=p;hzTotal+=p;break}}}
+function finishHazardV5(pattern=false){if(!hzActive)return;hzActive=false;clearInterval(hzTick);let sc=hzScenarios[hzIndex%hzScenarios.length],clipScore=hzFound.reduce((a,x)=>a+(x||0),0),possible=sc.two?10:5;let f=document.getElementById("hazardExplain");f.className="feedback "+(clipScore>=Math.ceil(possible*.55)?"correct":"wrong");f.innerHTML=pattern?`<b>0 points for this scenario.</b> Too many repeated clicks were detected.`:`<b>${clipScore}/${possible} points.</b> ${sc.desc} ${hzMode==="practice"?"The aim is to respond when it becomes a developing hazard — when it would make you change speed or direction.":""}`;hzIndex++;document.getElementById("hazardScore").textContent=hzMode==="mock"?`Score ${hzTotal}/75`:`Score ${hzTotal}`;let b=document.getElementById("hazardStart");b.disabled=false;if(hzMode==="mock"&&hzIndex>=14){let pass=hzTotal>=44;f.innerHTML+=`<br><br><b>Hazard mock complete: ${hzTotal}/75 — ${pass?"PASS":"NOT YET A PASS"}.</b>`;localStorage.setItem("v5HazardLast",hzTotal);let best=Math.max(+localStorage.getItem("v5HazardBest")||0,hzTotal);localStorage.setItem("v5HazardBest",best);b.textContent="Back to dashboard";b.onclick=goHomeV5;return}b.textContent="Next scenario";b.onclick=()=>{resetHazardV5()}}
+function showCombinedV5(){hideAllV5();document.getElementById("combinedV5").classList.remove("hidden");let hist=[];try{hist=JSON.parse(localStorage.getItem("ukTheoryHistory")||"[]")}catch(e){}let mocks=hist.filter(x=>String(x.mode||"").toLowerCase().includes("mock"));let mc=mocks.length?Math.max(...mocks.map(x=>Number(x.score)||0)):null;let hz=localStorage.getItem("v5HazardBest");hz=hz===null?null:+hz;document.getElementById("v5mc").textContent=mc===null?"—":`${mc}/50`;document.getElementById("v5hz").textContent=hz===null?"—":`${hz}/75`;let ready=mc!==null&&hz!==null&&mc>=43&&hz>=44;document.getElementById("v5ready").textContent=ready?"PASS READY":"Keep practising";document.getElementById("v5ready").className=ready?"pass":"fail"}
 
 </script></body></html>
